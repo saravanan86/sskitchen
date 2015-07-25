@@ -65,7 +65,7 @@ hr {
 }
 
 .brand-before {
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .brand-name {
@@ -74,7 +74,7 @@ hr {
 }
 
 .tagline-divider {
-    margin: 15px auto 3px;
+    margin: 0px auto 3px;
     max-width: 250px;
     border-color: #999999;
 }
@@ -110,6 +110,17 @@ hr {
     margin: 0 auto 0;
 }
 
+.item-selector{
+    background:transparent;
+    line-height:50px;
+    height:75px;
+    font-size: 1.25em;
+}
+
+.item-selector:hover{
+    background:#ddd;
+}
+
 footer {
     background: #fff;
     background: rgba(255,255,255,0.9);
@@ -120,11 +131,15 @@ footer p {
     padding: 50px 0;
 }
 
+.carouselIndicator {
+    bottom:-10px;
+}
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
         margin: 0;
-        padding: 30px 0 10px;
+        padding: 10px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -154,7 +169,7 @@ footer p {
     .address-bar {
         display: inherit;
         margin: 0;
-        padding: 0 0 40px;
+        padding: 0 0 15px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         text-transform: uppercase;
@@ -183,7 +198,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 15px;
+        padding: 5px 15px 5px 15px;
     }
 
     .navbar-nav>li>a {
@@ -205,4 +220,18 @@ footer p {
         display: table;
         clear: both;
     }
+
+    .brand {
+        font-size: 4.5em;
+        font-weight: 700;
+    }
+
+    .brand-name {
+        font-size: 3em;
+    }
+
+    .address-bar{
+        display: none;
+    }
 }
+
